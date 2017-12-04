@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.revicere.apakek.MainActivity"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/lbl_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lin_inc_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lbl_qty"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        >
+        //sebut saja ini krupuk
+        <Button
+            android:id="@+id/btn_inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textStyle="bold"
+            android:onClick="onClickInc"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/btn_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:onClick="onClickDec"
+            />
+        <TextView
+            android:id="@+id/lbl_krupuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KERUPUK"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:background="#1253df"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_inc_dec_kol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lin_inc_dec"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        >
+        //sebut saja ini kol
+        <Button
+            android:id="@+id/btn_inc_kol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textStyle="bold"
+            android:onClick="onClickInc_kol"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_qty_kol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/btn_dec_kol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:onClick="onClickDec_kol"
+            />
+        <TextView
+            android:id="@+id/lbl_kol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KOLKOL"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:background="#1253df"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_krupuk_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lin_inc_dec_kol"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        >
+        <TextView
+            android:id="@+id/lbl_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price krupuk"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_kol_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lin_krupuk_price"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        >
+        <TextView
+            android:id="@+id/lbl_price_kol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price kol"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_price_kol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung total!"
+        android:textAllCaps="false"
+        android:layout_below="@id/lin_kol_price"
+        android:onClick="onClickHitung"
+        />
+
+    <TextView
+        android:id="@+id/txt_totalharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gfhgkh"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btn_total"
+        />
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk ke menu"
+        android:textAllCaps="false"
+        android:layout_below="@id/txt_totalharga"
+        android:onClick="intentToMenu"
+        />
+
+</RelativeLayout>
