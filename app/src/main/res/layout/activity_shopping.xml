@@ -273,6 +273,183 @@
                 android:layout_below="@id/txt_qty_aseum"
                 />
         </RelativeLayout>
+        <TextView
+            android:id="@+id/lbl_makanan_ringan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan Ringan"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="16dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:id="@+id/lin_asinan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:onClick="intentToAsinan"
+            android:background="#e9e9e9">
+            <ImageView
+                android:id="@+id/img_asinan"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/asinan_kotak"
+                />
+            <TextView
+                android:id="@+id/txt_judul_asinan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_asinan"
+                android:text="Asinan Bogor"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txt_rating_asinan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate 7.8 - 10"
+                android:layout_toRightOf="@id/img_asinan"
+                android:layout_below="@id/txt_judul_asinan"
+                />
+            <TextView
+                android:id="@+id/txt_harga_asinan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 10.000/bakul"
+                android:layout_toRightOf="@id/img_asinan"
+                android:layout_below="@id/txt_rating_asinan"
+                android:textColor="#24bf0c"
+                />
+
+            <TextView
+                android:id="@+id/txt_tot1_harga_asinan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_harga_asinan"
+                android:layout_toRightOf="@id/img_asinan"
+                android:text="Rp "
+                android:textColor="#24bf0c"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_inc_asinan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:onClick="onClickIncAsinan"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt_qty_asinan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btn_inc_asinan"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btn_dec_asinan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:onClick="onClickDecAsinan"
+                android:gravity="center"
+                android:layout_below="@id/txt_qty_asinan"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lin_combro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:onClick="intentToCombro"
+            android:background="#f2f2f2">
+            <ImageView
+                android:id="@+id/img_combro"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/combro_kotak"
+                />
+            <TextView
+                android:id="@+id/txt_judul_combro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_combro"
+                android:text="Combro"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_rating_combro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate 8.2 - 10"
+                android:layout_toRightOf="@id/img_combro"
+                android:layout_below="@id/txt_judul_combro"
+                />
+            <TextView
+                android:id="@+id/txt_harga_combro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 2.000/biji"
+                android:layout_toRightOf="@id/img_combro"
+                android:layout_below="@id/txt_rating_combro"
+                android:textColor="#24bf0c"
+                />
+            <TextView
+                android:id="@+id/txt_tot1_harga_combro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp "
+                android:layout_toRightOf="@id/img_combro"
+                android:layout_below="@id/txt_harga_combro"
+                android:textColor="#24bf0c"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btn_inc_combro"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:onClick="onClickIncCombro"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt_qty_combro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btn_inc_combro"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btn_dec_combro"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:onClick="onClickDecCombro"
+                android:gravity="center"
+                android:layout_below="@id/txt_qty_combro"
+                />
+        </RelativeLayout>
     </LinearLayout>
 
 
