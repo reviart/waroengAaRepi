@@ -24,7 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShoppingActivity" />
-        <activity android:name=".LiweutActivity"></activity>
+        <activity android:name=".LiweutActivity" />
+        <activity android:name=".ContentErrorActivity" />
+        <activity android:name=".TOActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>

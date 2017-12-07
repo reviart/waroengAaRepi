@@ -12,10 +12,10 @@
         android:orientation="vertical"
         >
         <ImageView
-            android:id="@+id/img_det_liwet"
+            android:id="@+id/img_det_to"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/liweut"
+            android:src="@drawable/to"
             android:adjustViewBounds="true"
             />
         <LinearLayout
@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Liweut Cibungbulang"
+                android:text="Tutug Oncom Tasikmalaya"
                 android:textSize="20sp"
                 android:layout_marginBottom="10dp"
                 android:textAlignment="center"
@@ -43,14 +43,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rate 8.34 - 10"
+                    android:text="Rate 8.7 - 10"
                     android:layout_marginBottom="10dp"
                     android:layout_alignParentLeft="true"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rp 35.000/bakul"
+                    android:text="Rp 15.000/porsi"
                     android:layout_marginBottom="10dp"
                     android:layout_alignParentRight="true"
                     android:textColor="#24bf0c"

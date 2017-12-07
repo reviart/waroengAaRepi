@@ -21,15 +21,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(toMenu);
     }
 
+    public void intentToAbout(View view){
+        Intent toAbout = new Intent(this, AboutActivity.class);
+        startActivity(toAbout);
+    }
+
     /*public void onClickOrder(View view){
         int price = 20;
         int result = 0;
         result = qty*price;
         displayPrice(result);
     }*/
-
-
-
 
     /*public void onClickHitung(View view){
         displayTotal(result_krupuk,result_kol);
