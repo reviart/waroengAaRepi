@@ -27,7 +27,8 @@
         <activity android:name=".LiweutActivity" />
         <activity android:name=".ContentErrorActivity" />
         <activity android:name=".TOActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".StrukActivity"></activity>
     </application>
 
 </manifest>

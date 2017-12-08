@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/img_menu"
-        android:text="WAROENG AA REPI"
+        android:text="WAROENG URANG SUNDA"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"

@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -230,5 +232,33 @@ public class ShoppingActivity extends AppCompatActivity {
         double hasil = eslilin+cendol+surabi+combro+asinan+aseum+liweut+to;
         TextView txtTotal = (TextView) findViewById(R.id.txt_tot_harga);
         txtTotal.setText(NumberFormat.getCurrencyInstance(Locale.US).format(hasil));
+
     }
+
+    public void orderNow(View view){
+        /*final EditText nama;
+        final TextView total;
+        Button submit;
+
+        nama = (EditText) findViewById(R.id.edittext_nama);
+        total = (TextView) findViewById(R.id.txt_tot_harga);
+        submit = (Button) findViewById(R.id.btn_order);
+
+        submit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
+                final String v_nama = nama.getText().toString();
+                final double v_total = Double.parseDouble(total.getText().toString());
+                Intent passingToStruk = new Intent(getApplicationContext(), StrukActivity.class);
+                passingToStruk.putExtra("v_nama", String.valueOf(v_nama));
+                passingToStruk.putExtra("v_total", String.valueOf(v_total));
+                startActivity(passingToStruk);
+                finish();
+            }
+        });*/
+        Intent toStruk = new Intent(this, StrukActivity.class);
+        startActivity(toStruk);
+    }
+
 }

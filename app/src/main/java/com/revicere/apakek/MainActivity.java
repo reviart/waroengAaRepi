@@ -20,28 +20,4 @@ public class MainActivity extends AppCompatActivity {
         Intent toMenu = new Intent(this, ShoppingActivity.class);
         startActivity(toMenu);
     }
-
-    public void intentToAbout(View view){
-        Intent toAbout = new Intent(this, AboutActivity.class);
-        startActivity(toAbout);
-    }
-
-    /*public void onClickOrder(View view){
-        int price = 20;
-        int result = 0;
-        result = qty*price;
-        displayPrice(result);
-    }*/
-
-    /*public void onClickHitung(View view){
-        displayTotal(result_krupuk,result_kol);
-    }
-
-    private void displayTotal(int krupuk, int kol){
-        TextView txtTotal = (TextView) findViewById(R.id.txt_totalharga);
-        int hasil = krupuk+kol;
-        txtTotal.setText(NumberFormat.getCurrencyInstance().format(hasil));
-    }*/
-
-
 }
